@@ -1,4 +1,4 @@
-package edu.cmu.cs.cs214.rec04;
+package edu.cmu.cs.cs214.lab03;
 
 /**
  * InheritanceSortedIntList -- a variant of a SortedIntList that keeps

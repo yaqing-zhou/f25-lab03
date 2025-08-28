@@ -1,4 +1,4 @@
-package edu.cmu.cs.cs214.rec04;
+package edu.cmu.cs.cs214.lab03;
 
 import static org.junit.Assert.*;
 import org.junit.Before;
