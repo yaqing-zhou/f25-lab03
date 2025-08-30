@@ -1,4 +1,4 @@
-package edu.cmu.cs.cs214.lab03;
+package edu.cmu.cs.cs214.rec04;
 
 /**
  * Main class for Recitation 3. This can be used as sandbox to experiment in.

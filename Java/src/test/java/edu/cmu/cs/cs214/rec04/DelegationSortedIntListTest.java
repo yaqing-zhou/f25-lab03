@@ -1,32 +1,32 @@
-package edu.cmu.cs.cs214.lab03;
+package edu.cmu.cs.cs214.rec04;
 
 import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
 /**
- * Tests for the InheritanceSortedIntList class.
+ * Tests for the DelegationSortedIntList class.
  *
  * @author Nora Shoemaker
  *
  */
-public class InheritanceSortedIntListTest {
+public class DelegationSortedIntListTest {
 
     /** 
      * Uncomment the following code to test your implementation 
      * Select all and (CTRL + /) or (COMMAND + /)
      * Feel free to write more tests for your implementation. */
 
-    // private InheritanceSortedIntList list1;
-    // private InheritanceSortedIntList list2;
+    // private DelegationSortedIntList list1;
+    // private DelegationSortedIntList list2;
 
     // /**
     //  * Called before each test.
     //  */
     // @Before
     // public void setUp() {
-    // list1 = new InheritanceSortedIntList();
-    // list2 = new InheritanceSortedIntList();
+    // list1 = new DelegationSortedIntList();
+    // list2 = new DelegationSortedIntList();
     // }
 
     // /**
@@ -40,14 +40,14 @@ public class InheritanceSortedIntListTest {
     // list1.add(2);
     // list1.add(4);
     // list1.add(2);
-    // System.out.println(list1.getTotalAdded());
     // // check that the total number of elements added is 5.
     // assertTrue(list1.getTotalAdded() == 5);
+    // // helper function that prints out the contents of an IntegerList
     // printList(list1);
     // }
 
     // /**
-    //  * Tests for the addAll() method.
+    //  * Test for the addAll() method.
     //  */
     // @Test
     // public void testAddAll() {
@@ -80,10 +80,10 @@ public class InheritanceSortedIntListTest {
     //  * @param list IntegerList to be printed out.
     //  */
     // private void printList(IntegerList list) {
-    // for (int i = 0; i < list.size(); i++) {
-    // System.out.print(list.get(i));
-    // System.out.print(", ");
-    // }
-    // System.out.println();
+    //     for (int i = 0; i < list.size(); i++) {
+    //         System.out.print(list.get(i));
+    //         System.out.print(", ");
+    //     }
+    //     System.out.println();
     // }
 }
