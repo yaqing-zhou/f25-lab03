@@ -30,7 +30,7 @@ class DelegationSortedIntList {
     return this.delegate.add(num)
   }
 
-  addAll (list: IntegerList) {
+  addAll (list: IntegerList): boolean {
     this.totalAdded += list.size()
     return this.delegate.addAll(list)
   }
