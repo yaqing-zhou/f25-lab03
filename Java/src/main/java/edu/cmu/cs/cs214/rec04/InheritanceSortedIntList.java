@@ -15,27 +15,30 @@ public class InheritanceSortedIntList extends SortedIntList {
     // Write your implementation below with API documentation
     private int totalAdded = 0;
 
+    private boolean skipCount = false; // whether count should be skipped
+
     public int getTotalAdded(){
         return totalAdded;
     }
 
     @Override
     public boolean add(int num){
-        totalAdded++;
+        if (!skipCount) {
+            totalAdded++;
+        }
         return super.add(num);
     }
 
     @Override
     public boolean addAll(IntegerList list) {
+        totalAdded += list.size();
+        skipCount = true; // avoid double counting when super class calls addAll
 
-        boolean success = false;
-
-        for (int i = 0; i < list.size(); i++)
-        {
-            success |= this.add(list.get(i));
+        try {
+            return super.addAll(list);
+        } finally {
+            skipCount = false; // restore state
         }
-
-        return success;
     }
 
 }
