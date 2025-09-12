@@ -14,12 +14,10 @@ import { IntegerList } from './IntegerList.js'
 class InheritanceSortedIntList extends SortedIntList {
   // Write your implementation below with API documentation
   private totalAdded: number
-  private skipCount: boolean
 
   constructor () {
     super()
     this.totalAdded = 0
-    this.skipCount = false
   }
 
   getTotalAdded (): number {
@@ -27,20 +25,12 @@ class InheritanceSortedIntList extends SortedIntList {
   }
 
   add (num: number): boolean {
-    if (!this.skipCount) {
-      this.totalAdded += 1
-    }
+    this.totalAdded += 1
     return super.add(num)
   }
 
   addAll (list: IntegerList): boolean {
-    this.totalAdded += list.size()
-    this.skipCount = true
-    try {
-      return super.addAll(list)
-    } finally {
-      this.skipCount = false
-    }
+    return super.addAll(list)
   }
 }
 
